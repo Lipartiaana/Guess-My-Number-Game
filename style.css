@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #060047;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 50px 20px;
+}
+
+.btn {
+  border: none;
+  padding: 15px 20px;
+  background-color: #e90064;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #ff5f9e;
+  cursor: pointer;
+}
+
+.guess-text {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-size: 25px;
+}
+
+hr {
+  position: relative;
+  top: 50px;
+}
+
+.number {
+  position: relative;
+  background-color: #fff;
+  color: #060047;
+  font-size: 40px;
+  padding: 40px 60px;
+}
+
+.hidden-number {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 20px;
+  gap: 200px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-number {
+  border: none;
+  background-color: #aaa;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #e90064;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.input-number:focus {
+  outline: none;
+}
+
+.results {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .guess-text {
+    font-size: 45px;
+  }
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .input-number {
+    font-size: 30px;
+    height: 50px;
+  }
+  .btn {
+    height: 50px;
+  }
+  .hidden-number {
+    width: 80px;
+    height: 80px;
+  }
+  .results {
+    margin-top: 20px;
+  }
+}
