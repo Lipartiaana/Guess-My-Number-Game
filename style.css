@@ -5,15 +5,23 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
   text-align: center;
   background-color: #060047;
   color: #fff;
 }
 
 .header {
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  margin: 20px 20px 50px 20px;
+  align-items: center;
+  width: 98%;
+  top: 10px;
+  left: 10px;
 }
 
 .btn {
@@ -31,6 +39,7 @@ body {
 
 .guess-text {
   font-size: 60px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -97,26 +106,68 @@ hr {
   gap: 40px;
 }
 
-@media (max-width: 800px) {
-  .guess-text {
-    font-size: 45px;
+@media (max-width: 769px) {
+  .header {
+    width: 95%;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .guess-text {
+    font-size: 35px;
+  }
+
   .main {
     flex-direction: column;
     gap: 20px;
   }
+
   .input-number {
     font-size: 30px;
     height: 50px;
   }
+
   .btn {
     height: 50px;
   }
+
   .hidden-number {
     width: 80px;
     height: 80px;
   }
+
+  .number {
+    padding: 30px 45px;
+  }
+
   .results {
     margin-top: 20px;
+  }
+}
+
+@media (max-height: 500px) {
+  hr {
+    display: none;
+  }
+
+  .guess-text {
+    font-size: 35px;
+  }
+
+  .number {
+    padding: 30px 45px;
+  }
+
+  .main {
+    margin: 20px 5px 5px;
   }
 }
