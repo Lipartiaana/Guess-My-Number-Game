@@ -30,6 +30,7 @@ body {
   background-color: #e90064;
   font-size: 20px;
   color: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .btn:hover {
@@ -93,10 +94,12 @@ hr {
   color: #e90064;
   padding-left: 15px;
   text-align: center;
+  transition: all 0.5s ease-out;
 }
 
 .input-number:focus {
   outline: none;
+  background-color: #c7c7c7;
 }
 
 .results {
